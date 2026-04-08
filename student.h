@@ -4,9 +4,6 @@
 #include <string>
 using namespace std;
 
-// ─────────────────────────────────────────────
-//  Student Data Structure
-// ─────────────────────────────────────────────
 struct Student {
     int    id;
     string name;
@@ -19,4 +16,4 @@ struct Student {
     string letterGrade() const;
 };
 
-#endif // STUDENT_H
+#endif 
