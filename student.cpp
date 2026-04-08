@@ -1,8 +1,5 @@
 #include "student.h"
 
-// ─────────────────────────────────────────────
-//  GPA: average of all subject grades
-// ─────────────────────────────────────────────
 float Student::gpa() const {
     if (numSubjects == 0) return 0.0f;
     float sum = 0;
@@ -10,9 +7,7 @@ float Student::gpa() const {
     return sum / numSubjects;
 }
 
-// ─────────────────────────────────────────────
-//  Letter grade based on GPA
-// ─────────────────────────────────────────────
+
 string Student::letterGrade() const {
     float g = gpa();
     if (g >= 90) return "A+";
